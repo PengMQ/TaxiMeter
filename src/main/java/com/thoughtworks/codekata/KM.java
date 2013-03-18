@@ -17,4 +17,12 @@ public class KM implements Comparable<KM> {
     public boolean lessOrEqualThan(KM km) {
         return this.compareTo(km) <= 0;
     }
+
+    public KM minus(KM km) {
+        return new KM(value - km.value);
+    }
+
+    public Yuan multiple(Yuan y) {
+        return new Yuan(value * y.getValue());
+    }
 }

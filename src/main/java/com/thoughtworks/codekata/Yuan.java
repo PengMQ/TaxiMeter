@@ -2,9 +2,9 @@ package com.thoughtworks.codekata;
 
 
 public class Yuan {
-    private int value;
+    private float value;
 
-    public Yuan(int value) {
+    public Yuan(float value) {
         this.value = value;
     }
 
@@ -16,5 +16,13 @@ public class Yuan {
 
         Yuan thatYuan = (Yuan) o;
         return value == thatYuan.value;
+    }
+
+    public Yuan plus(Yuan y) {
+        return new Yuan(value + y.value);
+    }
+
+    public float getValue() {
+        return value;
     }
 }
