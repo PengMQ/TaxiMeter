@@ -5,7 +5,6 @@ public class Yuan {
     private int value;
 
     public Yuan(int value) {
-        //To change body of created methods use File | Settings | File Templates.
         this.value = value;
     }
 

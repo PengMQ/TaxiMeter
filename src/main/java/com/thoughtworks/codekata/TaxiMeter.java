@@ -6,6 +6,6 @@ public class TaxiMeter {
     }
 
     public Yuan calculate() {
-        return new Yuan(8);  //To change body of created methods use File | Settings | File Templates.
+        return new Yuan(8);
     }
 }
