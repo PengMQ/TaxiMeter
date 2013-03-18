@@ -19,4 +19,10 @@ public class TaxiMeterTest {
         Money money = new TaxiMeter(new KM(0)).calculate();
         assertThat(money, is(new Money(8)));
     }
+
+    @Test
+    public void should_be_8_yuan_given_3_km(){
+        Money money = new TaxiMeter(new KM(3)).calculate();
+        assertThat(money, is(new Money(8)));
+    }
 }
