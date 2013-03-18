@@ -26,7 +26,7 @@ public class TaxiMeterTest {
 
     @Test
     public void should_be_12_yuan_given_5_km() {
-//        Yuan money = new TaxiMeter(new KM(5)).calculate();
-//        assertThat(money, is(new Yuan(12)));
+        Yuan money = new TaxiMeter(new KM(5)).calculate();
+        assertThat(money, is(new Yuan(12)));
     }
 }

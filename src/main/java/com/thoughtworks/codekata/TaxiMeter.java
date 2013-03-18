@@ -9,10 +9,9 @@ public class TaxiMeter {
     }
 
     public Yuan calculate() {
-//        if(km <= new KM(3)){
-
+        if(km.lessOrEqualThan(new KM(3))){
             return new Yuan(8);
-//        }
-//        return new Yuan(12);
+        }
+        return new Yuan(12);
     }
 }

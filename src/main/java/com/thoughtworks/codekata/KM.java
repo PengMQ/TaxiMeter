@@ -13,4 +13,8 @@ public class KM implements Comparable<KM> {
         return value < km.value ? -1 :
                 value > km.value ? 1 : 0;
     }
+
+    public boolean lessOrEqualThan(KM km) {
+        return this.compareTo(km) <= 0;
+    }
 }
